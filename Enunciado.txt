@@ -1,0 +1,125 @@
+Id modificando el index.html para usar un script por ejercicio
+
+
+Ejercicio 1:
+	
+	Teniendo el array "programadores" obtener la tarea con mayor tiempo de desarrollo de entre todos los programadores 
+	usando los bucles ya vistos.
+
+	Como extra investiga y encuentra entre los métodos propios de array para obtener el mismo resultado.
+	
+	let programadores = [
+    {
+      nombre: "Juan",
+      id: 1,
+      tareas: [
+        {
+          nombreTarea: "Tarea 1.1",
+          idTarea: 1.1,
+          tiempoDesarrollo: "25 horas",
+        },
+        {
+          nombreTarea: "Tarea 1.2",
+          idTarea: 1.2,
+          tiempoDesarrollo: "10 horas",
+        },
+        { nombreTarea: "Tarea 1.3", idTarea: 1.3, tiempoDesarrollo: "2 horas" },
+        {
+          nombreTarea: "Tarea 1.4",
+          idTarea: 1.4,
+          tiempoDesarrollo: "2.5 horas",
+        },
+      ],
+    },
+    {
+      nombre: "Lucia",
+      id: 2,
+      tareas: [
+        { nombreTarea: "Tarea 2.1", idTarea: 2.1, tiempoDesarrollo: "5 horas" },
+        { nombreTarea: "Tarea 2.2", idTarea: 2.2, tiempoDesarrollo: "1 hora" },
+        {
+          nombreTarea: "Tarea 2.3",
+          idTarea: 2.3,
+          tiempoDesarrollo: "26 horas",
+        },
+        {
+          nombreTarea: "Tarea 2.4",
+          idTarea: 2.4,
+          tiempoDesarrollo: "3.75 horas",
+        },
+      ],
+    },
+    {
+      nombre: "David",
+      id: 3,
+      tareas: [
+        { nombreTarea: "Tarea 3.1", idTarea: 3.1, tiempoDesarrollo: "7 horas" },
+        {
+          nombreTarea: "Tarea 3.2",
+          idTarea: 3.2,
+          tiempoDesarrollo: "6 horas",
+        },
+        {
+          nombreTarea: "Tarea 3.3",
+          idTarea: 3.3,
+          tiempoDesarrollo: "9 horas",
+        },
+        {
+          nombreTarea: "Tarea 3.4",
+          idTarea: 3.4,
+          tiempoDesarrollo: "2.5 horas",
+        },
+      ],
+    },
+    {
+      nombre: "Manuel",
+      id: 4,
+      tareas: [
+        { nombreTarea: "Tarea 4.1", idTarea: 4.1, tiempoDesarrollo: "7 horas" },
+        {
+          nombreTarea: "Tarea 4.2",
+          idTarea: 4.2,
+          tiempoDesarrollo: "16 horas",
+        },
+        {
+          nombreTarea: "Tarea 4.3",
+          idTarea: 4.3,
+          tiempoDesarrollo: "29 horas",
+        },
+        {
+          nombreTarea: "Tarea 4.4",
+          idTarea: 4.4,
+          tiempoDesarrollo: "2.5 horas",
+        },
+      ],
+    },
+  ];
+
+
+
+Ejercicio 2: 
+
+	Usando como base el mismo array anterior, create una copia y modifica en todos los programadores las tareas para que tengan tiempoDesarrollo igual a 0.
+	Debes usar operadores de control de flujo
+
+	Como extra investiga y encuentra entre los métodos propios de array para obtener el mismo resultado.
+
+
+
+Ejercicio 3: 
+
+	Usando como base el mismo array anterior, create una copia y modifica en la misma las tareas 4.2 y 4.3 del programador Manuel 
+	para que tengan un tiempoDesarrolo de "0 horas". Debes usar operadores de control de flujo
+
+	Como extra investiga y encuentra entre los métodos propios de array para obtener el mismo resultado.
+
+
+
+Ejercicio 4: 
+
+	Usando como base el mismo array anterior, create una copia y encuentra todos los programadores con tareas con tiempoDesarrollo superior a 25 horas.
+	Debes usar operadores de control de flujo
+
+	Como extra investiga y encuentra entre los métodos propios de array para obtener el mismo resultado.
+
+
