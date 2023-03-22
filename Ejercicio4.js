@@ -94,10 +94,13 @@ for (let i = 0; i < programs.length; i++) {
   //Se recorre los arrays para encontrar el tiempo de desarrollo
   for (let j = 0; j < programs[i].tareas.length; j++) {
     if (
-      programs[i].tareas[j].tiempoDesarrollo
-        .replace('horas', '')
-        .replace('hora', '') > 25
+      Number(
+        programs[i].tareas[j].tiempoDesarrollo
+          .replace('horas', '')
+          .replace('hora', '') > 25
+      )
     ) {
+      //Se hace replace para convertir en numero y si es mayor de 25 horas imprime el programador
       console.log(programs[i]);
     }
   }
@@ -107,7 +110,11 @@ for (let i = 0; i < programs.length; i++) {
 let developers = programadores;
 developers.forEach((developer) => {
   developer.tareas.forEach((tarea) => {
-    if (tarea.tiempoDesarrollo.replace('horas', '').replace('hora', '') > 25) {
+    if (
+      Number(tarea.tiempoDesarrollo.replace('horas', '').replace('hora', '')) >
+      25
+    ) {
+      //Se hace replace para convertir en numero y si es mayor de 25 horas imprime el programador
       console.log(developer);
     }
   });

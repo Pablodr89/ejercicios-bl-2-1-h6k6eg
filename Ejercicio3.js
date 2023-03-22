@@ -91,12 +91,13 @@ let programadores = [
 let programs = programadores;
 
 for (let i = 0; i < programs.length; i++) {
-  //Se recorre los arrays para encontrar el tiempo de desarrollo
+  //Se recorre los arrays para encontrar el nombre de la tarea
   for (let j = 0; j < programs[i].tareas.length; j++) {
     if (
       programs[i].tareas[j].nombreTarea == 'Tarea 4.2' ||
       programs[i].tareas[j].nombreTarea == 'Tarea 4.3'
     ) {
+      //Si el nombre coincide se le pone el tiempo a 0 horas
       programs[i].tareas[j].tiempoDesarrollo = '0 horas';
     }
   }
@@ -106,11 +107,13 @@ console.log(programs);
 //Con metodos de arrays
 let developers = programadores;
 developers.forEach((developer) => {
+  //Se recorre los arrays para encontrar el nombre de la tarea
   developer.tareas.forEach((tarea) => {
     if (
       tarea.nombreTarea.includes('Tarea 4.2') == true ||
       tarea.nombreTarea.includes('Tarea 4.3') == true
     ) {
+      //Si el nombre coincide se le pone el tiempo a 0 horas
       tarea.tiempoDesarrollo = '0 horas';
     }
   });

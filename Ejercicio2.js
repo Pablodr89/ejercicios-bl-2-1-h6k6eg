@@ -91,7 +91,7 @@ let programadores = [
 let programs = programadores;
 
 for (let i = 0; i < programs.length; i++) {
-  //Se recorre los arrays para encontrar el tiempo de desarrollo
+  //Se recorre los arrays para poner el tiempo de desarrollo a 0 horas en todos
   for (let j = 0; j < programs[i].tareas.length; j++) {
     programs[i].tareas[j].tiempoDesarrollo = '0 horas';
   }
@@ -100,6 +100,7 @@ console.log(programs);
 
 //Con metodos de arrays
 let developers = programadores;
+//Se recorre los arrays para poner el tiempo de desarrollo a 0 horas en todos
 developers.forEach((developer) => {
   developer.tareas.forEach((tarea) => {
     tarea.tiempoDesarrollo = '0 horas';
