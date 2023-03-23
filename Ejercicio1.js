@@ -87,23 +87,22 @@ let programadores = [
   },
 ];
 
-//Usando bucles
-let tareas = [];
 let tiempo = [];
 let nombre = '';
 let mayor = 0;
 
 for (let i = 0; i < programadores.length; i++) {
   //Se recorre los arrays para encontrar el tiempo de desarrollo
-  tareas.push(programadores[i].tareas);
-  for (let j = 0; j < tareas.length; j++) {
+  for (let j = 0; j < programadores[i].tareas.length; j++) {
     tiempo = Number(
-      tareas[i][j].tiempoDesarrollo.replace('horas', '').replace('hora', '')
+      programadores[i].tareas[j].tiempoDesarrollo
+        .replace('horas', '')
+        .replace('hora', '')
     ); //Se convierten en numeros los tiempos
     if (tiempo > mayor) {
       //Se controla si el primero es mayor que el siguiente, se guarda en una variable y tambien se guarda el nombre de la tarea si es mayor que el anterior numero
       mayor = tiempo;
-      nombre = tareas[i][j].nombreTarea;
+      nombre = programadores[i].tareas[j].nombreTarea;
     }
   }
 }
